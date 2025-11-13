@@ -16,3 +16,6 @@ None of this should have any gameplay impact, though it hasn't been \*super\* th
 |-|-|
 |<img src="https://github.com/PieKing1215/SR2_Interpolator/blob/main/media/before_slime.gif" height=300 />|<img src="https://github.com/PieKing1215/SR2_Interpolator/blob/main/media/after_slime.gif" height=300 />|
 |<img src="https://github.com/PieKing1215/SR2_Interpolator/blob/main/media/before_run.gif" height=200 />|<img src="https://github.com/PieKing1215/SR2_Interpolator/blob/main/media/after_run.gif" height=200 />|
+
+Requires [MelonLoader](https://github.com/LavaGang/MelonLoader)﻿<br/>
+After installing MelonLoader, download and unzip the Interpolator_v###.zip and put the .dll in the Mods folder
