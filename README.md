@@ -1,5 +1,7 @@
 # Interpolator
 
+[View on NexusMods](https://www.nexusmods.com/slimerancher2/mods/115)
+
 Mod for [Slime Rancher 2](https://store.steampowered.com/app/1657630/Slime_Rancher_2/) that fixes choppy/"low fps" physics objects & first person vac animation
 
 The mod does 2 things:
