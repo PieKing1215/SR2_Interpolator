@@ -2,20 +2,20 @@
 
 [View on NexusMods](https://www.nexusmods.com/slimerancher2/mods/115)
 
-Mod for [Slime Rancher 2](https://store.steampowered.com/app/1657630/Slime_Rancher_2/) that fixes choppy/"low fps" physics objects & first person vac animation
+Mod for [Slime Rancher 2](https://store.steampowered.com/app/1657630/Slime_Rancher_2/) that fixes choppy/"low fps" physics objects
 
 The mod does 2 things:
 - When any dynamic Rigidbody is spawned, it enables Unity's built in interpolation on it (which is off in vanilla)
   - Affects all physics objects: slimes, food, plorts, hens, resources, etc
-- Adjusts the first person vac smoothing to be softer, in vanilla it's orders of magnitude stronger than it needs to be
+- ~Adjusts the first person vac smoothing to be softer, in vanilla it's orders of magnitude stronger than it needs to be~
+  - (removed in v1.1.0 since the issue was fixed in vanilla patch 1.3)
 
-None of this should have any gameplay impact, though it hasn't been \*super\* thoroughly tested
+None of this should have any gameplay impact, if you find any issues let me know
 
 ### Comparison (60fps video slowed down)
 | Vanilla | w/ Interpolator |
 |-|-|
 |<img src="https://github.com/PieKing1215/SR2_Interpolator/blob/main/media/before_slime.gif" height=300 />|<img src="https://github.com/PieKing1215/SR2_Interpolator/blob/main/media/after_slime.gif" height=300 />|
-|<img src="https://github.com/PieKing1215/SR2_Interpolator/blob/main/media/before_run.gif" height=200 />|<img src="https://github.com/PieKing1215/SR2_Interpolator/blob/main/media/after_run.gif" height=200 />|
 
 Requires [MelonLoader](https://github.com/LavaGang/MelonLoader)﻿<br/>
 After installing MelonLoader, download and unzip the Interpolator_v###.zip and put the .dll in the Mods folder
