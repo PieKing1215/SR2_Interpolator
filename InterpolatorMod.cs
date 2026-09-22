@@ -10,26 +10,11 @@ namespace SR2Interpolation
 {
     public class InterpolatorMod : MelonMod
     {
-        private static MelonLogger.Instance? _logger;
+        private static MelonLogger.Instance _logger;
 
         public override void OnInitializeMelon()
         {
             _logger = LoggerInstance;
-        }
-
-        public override void OnSceneWasLoaded(int buildIndex, string sceneName)
-        {
-            if (sceneName != "PlayerCore")
-                return;
-
-            var objs = Object.FindObjectsOfType<ObjectSpringEffect>();
-            foreach (var spring in objs)
-            {
-                // the first person bobbing is controlled by a script which updates (I assume in FixedUpdate) the setpoint for a spring
-                // but by default the _followingSharpness is 10000 which is way too high and causes it to snap each update
-                spring._followingSharpness = 50f;
-                _logger?.Msg($"Adjusted ObjectSpringEffect._followingSharpness {sceneName}");
-            }
         }
 
         [SuppressMessage("ReSharper", "UnusedMember.Local")]
